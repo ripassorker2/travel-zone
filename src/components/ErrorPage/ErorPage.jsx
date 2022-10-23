@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ErorPage = () => {
   return (
@@ -16,13 +17,13 @@ const ErorPage = () => {
               But dont worry, you can find plenty of other things on our
               homepage.
             </p>
-            <a
+            <Link
+              to={"/"}
               rel="noopener noreferrer"
-              href="#"
-              className="px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+              className="btn btn-outline btn-secondary"
             >
               Back to homepage
-            </a>
+            </Link>
           </div>
         </div>
       </section>

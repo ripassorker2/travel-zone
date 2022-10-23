@@ -21,13 +21,12 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap justify-center">
               {user?.uid ? (
-                <Link to={"/about"}>
+                <Link to={"/service"}>
                   <button
                     type="button"
-                    className="btn btn-info px-4 btn-outline mx-5"
+                    className="btn btn-secondary px-4 btn-outline mx-5"
                   >
-                    {" "}
-                    Read more
+                    Our services
                   </button>
                 </Link>
               ) : (
@@ -60,7 +59,7 @@ const Home = () => {
           className="w-5/6 h-96 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 dark:bg-gray-500"
         />
       </section>
-      <Service />
+      {/* <Service /> */}
     </div>
   );
 };
